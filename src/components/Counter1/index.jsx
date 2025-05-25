@@ -1,8 +1,8 @@
 import {useDispatch, useSelector} from "react-redux";
-import { down, reset, up } from "../../actions/counter";
+import {down, reset, up} from "../../actions/counter";
 
 const Action = () => {
-  const count = useSelector((state) => state.counterReducer);
+  const count = useSelector((state) => state.count);
   //useSelector là một hook giúp lấy state từ store
   const dispath = useDispatch();
   //useDispatch là một hook giúp gửi action đến store của redux để thay đổi state

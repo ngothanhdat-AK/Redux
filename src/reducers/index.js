@@ -1,5 +1,6 @@
 import counterReducer from "./counter"
 import { combineReducers } from "redux";
+import toDoReducer from "./toDo";
 
 
 const allReducers = combineReducers({
@@ -8,7 +9,8 @@ const allReducers = combineReducers({
     // comments: require('./commentsReducer').default,
     // notifications: require('./notificationsReducer').default,
     // settings: require('./settingsReducer').default,
-    counterReducer
+    count: counterReducer,
+    todo: toDoReducer,
 })
 
 export default allReducers;
